@@ -1,0 +1,4 @@
+Finished proj0 this morning
+(lecture3) primitive type vs reference type, reference type variables store the address to the data; the golden rule of equal: 
+copy what is in the right to the left, so reference types copies the address and primitive types copies the real data. 
+in java always pass by value: making actual copies of the bits. 
