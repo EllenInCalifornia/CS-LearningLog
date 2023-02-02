@@ -73,8 +73,8 @@ public class VengefulSLList<Item> extends SLList<Item> {
 if there is no argument in super(), it will call the default constructor with no argument;
 
 ## As it happens, every type in Java is a descendant of the Object class.
-### VengefulSLList extends SLList.  
-### SLList extends Object (implicitly).  
+ VengefulSLList extends SLList.  
+ SLList extends Object (implicitly).  
 
 ## Modules and encapsulation 
 ### Module: 
