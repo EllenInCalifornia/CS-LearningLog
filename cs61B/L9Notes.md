@@ -1,4 +1,29 @@
-# 9. Extends, Casting, Higher Order Functions
+# 9. Extends, Casting, Higher Order Functions 
+
+* Higher Order Function: A function that treats another function as data.
+* e.g. takes a function as input.
+## example in python 
+
+```python
+def tenX(x):
+	return 10*x
+ 
+def do_twice(f, x):
+	return f(f(x))
+ 
+print(do_twice(tenX, 2))
+```
+<br/><br/>
+但是old java里function 不能当作argument，但是可以用interface
+<img width="837" alt="image" src="https://user-images.githubusercontent.com/118059669/216334176-44b34915-4c41-4fe3-ba13-d338cd26cdd4.png">
+
+
+## example in java 
+<img width="898" alt="image" src="https://user-images.githubusercontent.com/118059669/216334352-56490d0c-e23b-4373-b09f-bc7ef4ea2a24.png">
+<br/><br/>
+<img width="873" alt="image" src="https://user-images.githubusercontent.com/118059669/216336486-3a822ec7-752f-470f-b4f4-29958c15b052.png">
+
+# Extends, Casting
 
 <img width="941" alt="image" src="https://user-images.githubusercontent.com/118059669/216213863-37132c85-a166-4d10-8316-3bfd8e0416d9.png">
 
@@ -103,6 +128,33 @@ if there is no argument in super(), it will call the default constructor with no
 |  If overridden, decide which method to call based on run-time type of variable. |
 | Compiler allows method calls based on compile-time type of variable.  |
     
-    
+<img width="1047" alt="image" src="https://user-images.githubusercontent.com/118059669/216318036-f462870b-5204-45b8-a68b-1c2d68e21927.png">
+<br/><br/>
 
-    
+<img width="841" alt="image" src="https://user-images.githubusercontent.com/118059669/216318971-bf6c966f-0303-4c9e-9891-544316fbe49d.png">
+
+<br/><br/>
+小的可以放大的盒子里，但是大的不能放小的盒子里。 supperclass =   new subclass
+<img width="874" alt="image" src="https://user-images.githubusercontent.com/118059669/216328948-138250bb-7211-4846-a462-9786159640ea.png">
+
+# casting
+<img width="874" alt="image" src="https://user-images.githubusercontent.com/118059669/216329649-f561597a-cec1-4eb7-ad3e-17926be9d2c0.png">
+
+Casting is a powerful but dangerous tool.
+* Tells Java to treat an expression as having a different compile-time type.
+* In example below, effectively tells the compiler to ignore its type checking duties.
+
+```java 
+Poodle frank  = new Poodle("Frank", 5);
+Malamute frankSr = new Malamute("Frank Sr.", 100);
+
+Poodle largerPoodle = (Poodle) maxDog(frank, frankSr);
+```
+if we run the code above, we get a ClassCastException at runtime.
+
+
+
+
+
+
+
