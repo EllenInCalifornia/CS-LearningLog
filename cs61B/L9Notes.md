@@ -84,11 +84,25 @@ if there is no argument in super(), it will call the default constructor with no
 4) As we’ll see: Implementation inheritance (e.g. extends) breaks encapsulation!  
 
 
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/118059669/216233390-6e5ce4e3-7577-4251-a304-c9253b67cf0c.png">
     
     
+## Type Checking and Casting
+
+<img width="890" alt="image" src="https://user-images.githubusercontent.com/118059669/216234836-d6de16ca-7466-41e0-aa8d-2f1a53f6b9fc.png">
+注意 sl的static Type 是SLList，但是dynamic type 是vengefulSLList.  
+
+<br/><br/>
+    
+| static type      |   dynamic type |
+| ------------------|-------------- |
+| compile-time type| run-time type  |
+
+| 注意 |
+|-----|
+|  If overridden, decide which method to call based on run-time type of variable. |
+| Compiler allows method calls based on compile-time type of variable.  |
     
     
-    
-    
-    
+
     
