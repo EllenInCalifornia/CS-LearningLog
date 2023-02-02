@@ -1,4 +1,4 @@
 # CS-LearningLog
 This is my self-paced learning journal. 
 
-[nn](/dir1/nn.txt)
+[L8-Interface Inheritance](/interfaceProblem.md)
