@@ -31,6 +31,9 @@ public class Dog implements Animal {
     print("dog sniff animal"); }
   void flatter(Dog a) {
     print("u r cool dog"); }
+  
+    }
+    
 ```
 ```java 
 Animal a = new Dog();
@@ -41,7 +44,41 @@ d.flatter(d); // "u r cool dog"
 a.flatter(d); // “u r cool animal” （flatter is overloaded, not overridden!）
 ```
 
+# 备注
+* a subclass 必须override all methods declared in the interface, 但是如果这个method 是一个default，就都可；
+* * 这时如果一个variable static type 是superclass， dynamic type 是subclass， 比如Animal a = new Dog(); <br> 那么method call 首先record Animal 的method，如果没被override 则执行；如被override，则执行override的method；
+* * subclass 可以有 superclass 没有的method，Compiler allows method calls based on compile-time type of variable, 所以superclass variable 即使dynamic type是subclass 也没法call subclass 多出来的method. 
+* * Compiler also allows assignments based on compile-time types.
 
+## 参考课件 
+<img width="1016" alt="image" src="https://user-images.githubusercontent.com/118059669/216493024-ff4f9b5b-c633-4825-965d-3ff912d1a40b.png">
+
+
+# Compile-Time Types and Expressions
+* 1. An expression using the new keyword has the specified compile-time type.
+```java 
+SLList<Integer> sl = new VengefulSLList<Integer>(); 
+``` 
+* * Compile-time type of right hand side (RHS) expression is VengefulSLList.
+* * A VengefulSLList is-an SLList, so assignment is allowed.
+
+* 2. Method calls have compile-time type equal to their declared type.
+```java
+public static Dog maxDog(Dog d1, Dog d2) { … }
+```
+* * Any call to maxDog will have compile-time type Dog!
+* * compilation error example 
+```java 
+Poodle frank  = new Poodle("Frank", 5);
+Poodle frankJr = new Poodle("Frank Jr.", 15);
+
+Dog largerDog = maxDog(frank, frankJr);
+Poodle largerPoodle = maxDog(frank, frankJr);
+```
+* fix： casting (desired type) 
+```java
+Poodle largerPoodle = (Poodle) maxDog(frank, frankJr);
+```
 
 
 # interface inheritance: make code general 
