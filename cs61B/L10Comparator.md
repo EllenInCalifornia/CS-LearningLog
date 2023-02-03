@@ -1,8 +1,29 @@
+ # Comparable Vs Comparator 
+ ## Comparable 
+ * A comparable object is capable of comparing itself with another object. <br> The class itself must implements the java.lang.Comparable interface to<br>compare its instances. 
+ * Consider a Movie class that has members like, rating, name, year. Suppose<br> we wish to sort a list of Movies based on year of release. We can<br> implement the Comparable interface with the Movie class, and we <br>override the method compareTo() of Comparable interface. 
+ * Now, suppose we want to sort movies by their rating and names as well. <br>When we make a collection element comparable(by having it implement Comparable),<br> we get only one chance to implement the compareTo() method.
+ ```java
+       //..make a Movie list..
+       Collections.sort(list); 
+       //这会按照comparable 里的compareTo 来sort
+ ```
+ 
+ ## Comparator 
+ * Unlike Comparable, Comparator is external to the element type we are comparing. <br>It’s a separate class. We create multiple separate classes (that implement Comparator) to <br>compare by different members.Collections class has a second sort() method <br>and it takes Comparator. The sort() method invokes the compare() to sort objects.
+ 
+ ```java
+ NameCompare nameCompare = new NameCompare();
+        Collections.sort(list, nameCompare);
+```
+
 # Review: Typing Rules
 * Compiler allows the memory box to hold any subtype.
 * Compiler allows calls based on static type.
 * Overriden non-static methods are selected at runtime based on dynamic type.
 * For overloaded methods, the method is selected at compile time.
+
+
 
 ## exercise 
 * casting, 注意外面可以有括号  
