@@ -74,7 +74,9 @@ public static String longest(SLList<String> list) {
 * specifying the capabilities of a subclass using the implements keyword
 * interface: the list of all method signatures
 * subclasses must override all of these methods
+* a subclass is allowed to add methods in a class that aren't declared in that class's interface.
 * if X is a superclass of Y, then memory boxes for x may contain y, 反之不行
+
 
 ## implementation inheritance
 * Use the default keyword to specify a method that subclasses should inherit from an interface.
