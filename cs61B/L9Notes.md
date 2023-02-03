@@ -23,10 +23,14 @@ print(do_twice(tenX, 2))
 <br/><br/>
 <img width="873" alt="image" src="https://user-images.githubusercontent.com/118059669/216336486-3a822ec7-752f-470f-b4f4-29958c15b052.png">
 
+## overide Vs overload 
+* if a subclass has a method with the exact same signature as in the superclass, we say the subclass overrides the method
+* Java allows multiple methods with same name, but different parameters/signatures. This is called method overloading
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/118059669/216481723-151d0228-5978-4760-96f7-d3698d28d0f4.png">
+
 # Extends, Casting
 
 <img width="941" alt="image" src="https://user-images.githubusercontent.com/118059669/216213863-37132c85-a166-4d10-8316-3bfd8e0416d9.png">
-
 
 
 ## 以下代码有SLList的全部method，同时多了rotateRight 
