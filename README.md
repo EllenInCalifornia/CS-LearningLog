@@ -4,7 +4,7 @@ This is my self-paced learning journal.
 
 
 ## CS61b data structure  
-[L8-Interface Inheritance](/interfaceProblem.md)
+[L8-Interface Inheritance](/cs61b/interfaceProblem.md)
 
 <br/><br/>
 
