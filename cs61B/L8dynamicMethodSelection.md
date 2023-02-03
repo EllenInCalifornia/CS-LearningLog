@@ -113,6 +113,7 @@ public static String longest(SLList<String> list) {
 * subclasses must override all of these methods
 * a subclass is allowed to add methods in a class that aren't declared in that class's interface.
 * if X is a superclass of Y, then memory boxes for x may contain y, 反之不行
+* overriding only apllies to non- static methods 
 
 
 ## implementation inheritance
