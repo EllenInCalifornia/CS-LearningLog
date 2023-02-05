@@ -13,7 +13,7 @@ String[] expected = {"i", "have", "an", “egg”};
 * 或者逐项对比，使用 input[i].equals(expected[i])
 
 # TDD  Test driven development -使用JUnit
-*** 比较Array**
+* **比较Array**
 ** org.junit.Assert.assertArrayEquals(expected,input);
 * **比较String**
 *  int cmpr = "abc".compareTo("eft");
