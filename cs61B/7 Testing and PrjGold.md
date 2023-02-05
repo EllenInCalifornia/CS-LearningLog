@@ -47,4 +47,15 @@ assertEquals("Oh noooo!\nThis is bad:\n   Random number " + actual
                      + " not equal to " + expected + "!", 
                      expected, actual);
 ```
-自己没理解题，没想出来，@source flyingpig,[Source Code](https://github.com/PKUFlyingPig/CS61B/blob/e1fc65dcfdcf67e691dd5783f522181026ec0d1e/proj1gold/TestArrayDequeGold.java)
+* 自己没理解题，没想出来 @source flyingpig, [Source Code](https://github.com/PKUFlyingPig/CS61B/blob/e1fc65dcfdcf67e691dd5783f522181026ec0d1e/proj1gold/TestArrayDequeGold.java)
+
+### 思路整理
+* 测试范围 int 0-1000
+* 只assertEquals-remove值
+* 用String concatenation 记录log 
+* to prevent NullPointerException
+* * if size == 0: randomly addFrist，addLast
+* * random, 0 or 1 : StdRandom.uniform(2)
+* if size != 0: randomly addFrist，addLast, removeFirst, removeLast; 
+* * 随机进行4种操作，结合switch
+
