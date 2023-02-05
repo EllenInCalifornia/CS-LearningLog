@@ -1,3 +1,13 @@
+# date
+## content 
+## problem
+# Feb05/2023
+## cs61a
+* finished lab01 without watching videos or reading books
+## cs61b
+* finished prjGold, autograder, learned about randmized tests and practiced switch- case  
+## problem
+
 # Feb04/2023
 ## 学习内容
 ### cs61a
