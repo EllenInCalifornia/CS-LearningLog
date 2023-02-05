@@ -13,8 +13,10 @@ String[] expected = {"i", "have", "an", “egg”};
 * 或者逐项对比，使用 input[i].equals(expected[i])
 
 # TDD  Test driven development -使用JUnit
+## 比较Array
 * org.junit.Assert.assertArrayEquals(expected,input);
-* 比较string： int cmpr = "abc".compareTo("eft");
+## 比较String
+*  int cmpr = "abc".compareTo("eft");
 * * 备注： 此处提到了deprecated， 一开始用assertEquals在intelliJ里面会高亮，显示deprecated，因为已经有更新版本了
 * 先写test
 * import org.junit.Test 之后句法变得简单
