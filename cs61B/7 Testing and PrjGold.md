@@ -64,7 +64,7 @@ assertEquals("Oh noooo!\nThis is bad:\n   Random number " + actual
 * 学习了random随机的用法，比如一共有几种情况，就用几个随机数；尽量randomize，每次添加的数也进行randomize；
 * 复习了switch（x）case 1: 的句法
 * 学习了如何用String concatenation 记录failure sequences；
-*** 不知道 assertArrayEquals(stdArray, testArray)- cannot resolve method 是什么意思。**
+* **问题：**不知道 assertArrayEquals(stdArray, testArray)- cannot resolve method 是什么意思。**
 * 不知道如何test addFirst，addLast
 
 ## code 
