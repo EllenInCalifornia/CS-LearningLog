@@ -62,6 +62,7 @@ assertEquals("Oh noooo!\nThis is bad:\n   Random number " + actual
 * 耗时3h；
 * 学习了random随机的用法，比如一共有几种情况，就用几个随机数；尽量randomize，每次添加的数也进行randomize；
 * 复习了switch（x）case 1: 的句法
+* 学习了如何用String concatenation 记录failure sequences；
 * It is not as difficult as you thought. 
 
 ## code 
