@@ -47,4 +47,4 @@ assertEquals("Oh noooo!\nThis is bad:\n   Random number " + actual
                      + " not equal to " + expected + "!", 
                      expected, actual);
 ```
-自己没理解题，没想出来，参考[答案](https://github.com/PKUFlyingPig/CS61B/blob/e1fc65dcfdcf67e691dd5783f522181026ec0d1e/proj1gold/TestArrayDequeGold.java)@source flyingpig
+自己没理解题，没想出来，@[flyingpig(Sep15, 2020)CS61B/proj1gold/TestArrayDequeGold.java Source Code](https://github.com/PKUFlyingPig/CS61B/blob/e1fc65dcfdcf67e691dd5783f522181026ec0d1e/proj1gold/TestArrayDequeGold.java)@source 
