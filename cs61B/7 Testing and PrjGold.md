@@ -47,9 +47,9 @@ assertEquals("Oh noooo!\nThis is bad:\n   Random number " + actual
                      + " not equal to " + expected + "!", 
                      expected, actual);
 ```
-* 自己没理解题，没想出来 @source flyingpig, [Source Code](https://github.com/PKUFlyingPig/CS61B/blob/e1fc65dcfdcf67e691dd5783f522181026ec0d1e/proj1gold/TestArrayDequeGold.java)
 
-### 思路整理
+
+## 思路整理
 * 测试范围 int 0-1000
 * 只assertEquals-remove值
 * 用String concatenation 记录log 
@@ -58,4 +58,69 @@ assertEquals("Oh noooo!\nThis is bad:\n   Random number " + actual
 * * random, 0 or 1 : StdRandom.uniform(2)
 * if size != 0: randomly addFrist，addLast, removeFirst, removeLast; 
 * * 随机进行4种操作，结合switch
+## 回顾
+* 耗时3h；
+* 学习了random随机的用法，比如一共有几种情况，就用几个随机数；尽量randomize，每次添加的数也进行randomize；
+* 复习了switch（x）case 1: 的句法
+* It is not as difficult as you thought. 
 
+## code 
+* 自己没理解题，没想出来 @source flyingpig, [Source Code](https://github.com/PKUFlyingPig/CS61B/blob/e1fc65dcfdcf67e691dd5783f522181026ec0d1e/proj1gold/TestArrayDequeGold.java)
+
+```java
+import static org.junit.Assert.*;
+import org.junit.Test;
+public class TestArrayDequeGold {
+    @Test
+    public void testStudentArrayDeque() {
+        StudentArrayDeque<Integer> testArray = new StudentArrayDeque<>();
+        ArrayDequeSolution<Integer> stdArray = new ArrayDequeSolution<>();
+        String log = "";
+        for (int i = 0; i < 1000; i++) {
+            if (testArray.size() == 0) {
+                int firstOrLast = StdRandom.uniform(2);
+                Integer numberToAdd = StdRandom.uniform(1000);
+                if (firstOrLast == 0) {
+                    testArray.addFirst(numberToAdd);
+                    stdArray.addFirst(numberToAdd);
+                    log = log + "addFirst(" + numberToAdd + ")\n";
+                } else {
+                    testArray.addLast(numberToAdd);
+                    stdArray.addLast(numberToAdd);
+                    log = log + "addLast(" + numberToAdd + ")\n";
+                }
+            } else {
+                int oneOfFour = StdRandom.uniform(4);
+                Integer numberToAdd = StdRandom.uniform(1000);
+                Integer removeofTest = 0;
+                Integer removeofStd = 0;
+                switch (oneOfFour) {
+                    case 0:
+                        testArray.addFirst(numberToAdd);
+                        stdArray.addFirst(numberToAdd);
+                        log = log + "addFirst(" + numberToAdd + ")\n";
+                        break;
+                    case 1:
+                        testArray.addLast(numberToAdd);
+                        stdArray.addLast(numberToAdd);
+                        log = log + "addLast(" + numberToAdd + ")\n";
+                        break;
+                    case 2:
+                        removeofTest = testArray.removeFirst();
+                        removeofStd = stdArray.removeFirst();
+                        log += "removeFirst()\n";
+                        break;
+                    case 3:
+                        removeofTest = testArray.removeLast();
+                        removeofStd = stdArray.removeLast();
+                        log += "removeLast()\n";
+                        break;
+
+                }
+                assertEquals(log, removeofStd, removeofTest);
+            }
+
+        }
+    }
+}
+```
