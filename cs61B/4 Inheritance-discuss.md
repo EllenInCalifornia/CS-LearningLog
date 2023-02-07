@@ -1,5 +1,56 @@
 # non static variable cannot be referenced from a static context 
-*The error non static variable cannot be referenced from a static context in Java is mostly faced by the beginners at the time of compilation of Java program. The reason to occur this error is that they use a non-static member variable in the main() method. 
+*The error non static variable cannot be referenced from a static context in Java: The reason to occur this error is that they use a non-static member variable in the main() method. 
+main() method is a static nested method, so it does not have access to other members of the enclosing class;
+## problem1: how does a nested static class access other members of the enclosing class
+
+
+
+* Non-static nested classes (inner classes) have access to other members of the enclosing class, even if they are declared private. Static nested classes do not have access to other members of the enclosing class. 
+# A nested class is a member of its enclosing class.
+## access a nested non- static class from another class 
+```java 
+public class DMSList {
+    private IntNode sentinel;
+    public DMSList() {
+        //错： expression expected
+        // sentinel = new IntNode(-100, LastNode);
+        sentinel = new IntNode(-100, null);
+    }
+    public class IntNode {
+        public int item;
+        public IntNode Next;
+        public IntNode(int i, IntNode n) {
+            item = i;
+            Next = n;
+        }
+  }
+  ```
+ ```java 
+ public class Error1 {
+    public static void main(String[] args) {
+        DMSList l = new DMSList();
+        System.out.println(l.max());
+        DMSList.IntNode k = new IntNode(1,null);
+    }
+}
+```
+##  in the above code, IntNode is a non- static method, so it can only be accessed by creating an instance of its outerclass, using the following syntax
+```java
+   OuterClass outerObject = new OuterClass();
+   OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+```
+## fix to Error1 
+```java
+public class Error1 {
+    public static void main(String[] args) {
+        DMSList l = new DMSList();
+        System.out.println(l.max());
+        DMSList.IntNode k = l.new IntNode(1,null);
+    }
+}
+```
+    
+
 # prolems with extend
 * \\ public void m4() {System.out.println("Cm4-> " + super.super.x); }} can't do super.super
 # exercise
