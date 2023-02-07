@@ -6,7 +6,7 @@
 ## The static Methods (Or Class Methods)
 ### non- static method 下自动生成一个instance: this，can access 本class的<br>static/non- static variables
 * We also commonly** use static methods to create utility or helper classes** so that we can<br> get them without creating a new object of these classes.
-* static methods in Java are resolved at compile time. Since method overriding is part of Runtime Polymorphism,
+* static methods in Java are resolved at compile time. Since method overriding is part of <br>Runtime Polymorphism,
 * * static methods can't be overridden.
 * * Abstract methods can't be static.
 * * static methods can't use this or super keywords.
