@@ -143,8 +143,8 @@ if there is no argument in super(), it will call the default constructor with no
 
 # casting
 <img width="874" alt="image" src="https://user-images.githubusercontent.com/118059669/216329649-f561597a-cec1-4eb7-ad3e-17926be9d2c0.png">
-
-Casting is a powerful but dangerous tool.
+## The compiler will not allow casts to unrelated types. even two subclasses with the same superclass  
+## Casting is a powerful but dangerous tool.
 * Tells Java to treat an expression as having a different compile-time type.
 * In example below, effectively tells the compiler to ignore its type checking duties.
 
