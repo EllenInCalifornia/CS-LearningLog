@@ -156,7 +156,8 @@ Poodle largerPoodle = (Poodle) maxDog(frank, frankSr);
 ```
 if we run the code above, we get a ClassCastException at runtime.
 
-
+# ClassCastException
+It is a **runtime exception** that occurs when the application code attempts to cast an object to another class of which the original object is not an instance.
 
 
 
