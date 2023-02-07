@@ -1,6 +1,10 @@
-# non static variable cannot be referenced from a static context 
+# 弄明白 non static variable cannot be referenced from a static context 
+# main() method is a static method， 
 *The error non static variable cannot be referenced from a static context in Java: The reason to occur this error is that they use a non-static member variable in the main() method. 
 main() method is a static nested method, so it does not have access to other members of the enclosing class;
+# 1 
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/118059669/217159583-d5f72420-1ef0-483d-b29f-c96715b26b4c.png">
+
 ## problem1: how does a nested static class access other members of the enclosing class
 
 
