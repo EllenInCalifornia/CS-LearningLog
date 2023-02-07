@@ -1,6 +1,8 @@
+# non static variable cannot be referenced from a static context 
+*The error non static variable cannot be referenced from a static context in Java is mostly faced by the beginners at the time of compilation of Java program. The reason to occur this error is that they use a non-static member variable in the main() method. 
 # prolems with extend
 * \\ public void m4() {System.out.println("Cm4-> " + super.super.x); }} can't do super.super
-# 这道题做错了
+# exercise
 * d has the compile type Dog, which has the method bark(Dog d), c is a Dog, so it is compilable 
 * but d has the runtime type Corgi, and Corgi's method overrides Dogs bark(Dog d)
 * 所以会运行/* Method C */
