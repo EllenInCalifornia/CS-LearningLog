@@ -164,3 +164,5 @@ public class Cat extends Animal {
 <img width="574" alt="image" src="https://user-images.githubusercontent.com/118059669/217121525-5692756b-fdb3-48f4-977b-6109a6cea77b.png">
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/118059669/217121555-be8358e8-bdcd-4b25-88b4-b7cc78e379d8.png">
 
+# exercise 
+<img width="383" alt="image" src="https://user-images.githubusercontent.com/118059669/217235487-873e0cca-0b77-4d32-a4df-ea26995d8077.png">
