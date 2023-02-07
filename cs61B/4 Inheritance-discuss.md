@@ -1,12 +1,39 @@
-# 弄明白 non static variable cannot be referenced from a static context 
+# static 
+* can apply the static keyword to variables, methods, blocks, and nested classes
+* means that the particular member belongs to a type itself, rather than to an instance of that type.
+## static Field 
+* public static int numberOfCars;
+## The static Methods (Or Class Methods)
+* We also commonly** use static methods to create utility or helper classes** so that we can<br> get them without creating a new object of these classes.
+* static methods in Java are resolved at compile time. Since method overriding is part of Runtime Polymorphism,
+* * static methods can't be overridden.
+* * Abstract methods can't be static.
+* * static methods can't use this or super keywords.
+
+* The following combinations of the instance, class methods, and variables are valid:
+* * instance methods can directly access both instance methods and instance variables
+* * instance methods can also access static variables and static methods directly
+* * static methods can access all static variables and other static methods
+* * static methods can't access instance variables and instance methods directly. <br>They need some object reference to do so.
+## A static Class
+* The main difference between these two is that the inner classes have access to all members<br> of the enclosing class (including private ones), whereas the static nested classes only have access to <br>static members of the outer class.
+
+* In fact, static nested classes behave exactly like any other top-level class, but are enclosed<br> in the only class that will access it, to provide better packaging convenience.
+
+* Basically, a static nested class doesn't have access to any instance members of the enclosing <br>outer class. It can only access them through an object's reference.
+
+* static nested classes can access all static members of the enclosing class, including private ones.
+
+Java programming specification doesn't allow us to declare the top-level class as static. Only <br>classes within the classes (nested classes) can be made as static.
+
+# compile error: non static variable cannot be referenced from a static context 
 # main() method is a static method， 
 *The error non static variable cannot be referenced from a static context in Java: The reason to occur this error is that they use a non-static member variable in the main() method. 
-main() method is a static nested method, so it does not have access to other members of the enclosing class;
+# main() method is a static nested method, so it does not have access to other members of the enclosing class;
 # 1 
 <img width="563" alt="image" src="https://user-images.githubusercontent.com/118059669/217159583-d5f72420-1ef0-483d-b29f-c96715b26b4c.png">
 
 ## problem1: how does a nested static class access other members of the enclosing class
-
 
 
 * Non-static nested classes (inner classes) have access to other members of the enclosing class, even if they are declared private. Static nested classes do not have access to other members of the enclosing class. 
