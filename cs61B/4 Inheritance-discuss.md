@@ -1,3 +1,35 @@
+# prolems with extend
+* \\ public void m4() {System.out.println("Cm4-> " + super.super.x); }} can't do super.super
+# 这道题做错了
+* d has the compile type Dog, which has the method bark(Dog d), c is a Dog, so it is compilable 
+* but d has the runtime type Corgi, and Corgi's method overrides Dogs bark(Dog d)
+* 所以会运行/* Method C */
+
+```java
+public class Dog {
+    public void bark(Dog d) { /* Method A */ }
+
+}
+public class Corgi extends Dog {
+    public void bark(Corgi c) { /* Method B */ }
+    @Override
+    public void bark(Dog d) { /* Method C */ }
+    public void play(Dog d) { /* Method D */ }
+    public void play(Corgi c) { /* Method E */ }
+}
+
+public static void main(String[] args) {
+        Dog d = new Corgi();
+        Corgi c = new Corgi();
+        d.bark(c);
+        }
+```
+
+
+
+
+
+
 # Extend Error- no default constructor available in superclass 
 * about extend, if the subclass does not specify a constructor explicitly (as in B), <br>the Java compiler will create a parameterless constructor, That's trying to call the superclass parameterless constructor - so it has to exist.
 ### parameterless constructor is the default constructor in the superclass,<br>if the superclass doesn't have a parameterless constructor, no default constructor available
