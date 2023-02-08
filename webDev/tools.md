@@ -7,6 +7,22 @@
 
 [introduction: ELI5 backend technologies and how they relate to each other.](https://www.reddit.com/r/learnprogramming/comments/cddd9k/comment/ettcymq/?utm_source=share&utm_medium=web2x)
 
+# backend 
+The back- end of a website consists of a **server, an application, and a database**.
+In order to make the server, application, and database communicate with each other, <br>
+back-end devs use **server-side languages like PHP, Ruby, Python, Java, and .Net** to build<br>
+an application, and tools like MySQL, Oracle, and SQL Server to find, save, or change data<br>
+and serve it back to the user in front-end code. 
+
+Job openings for back-end developers often also call for **experience with PHP frameworks <br>
+like Zend, Symfony, and CakePHP; experience with version control software like SVN, CVS, or Git;<br>
+and experience with Linux as a development and deployment system.**
+
+"Recently public and private APIs have become an essential part of trading data between<br>
+mobile devices, websites, and other connected systems. **Creating APIs** that the public finds <br>
+useful is a very satisfying part of my job"
+
+
 # web 前端三大核心技术
 * html 网页控件
 * css 美化控件代码
