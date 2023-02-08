@@ -5,6 +5,8 @@
 
 [freeStartingCourse](https://www.theodinproject.com/paths)
 
+[introduction: ELI5 backend technologies and how they relate to each other.](https://www.reddit.com/r/learnprogramming/comments/cddd9k/comment/ettcymq/?utm_source=share&utm_medium=web2x)
+
 # web 前端三大核心技术
 * html 网页控件
 * css 美化控件代码
