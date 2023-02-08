@@ -1,3 +1,10 @@
+# useful articles 
+[How do I become a self-taught full stack developer?](https://www.quora.com/How-do-I-become-a-self-taught-full-stack-developer/answer/Ismael-Velasco-1/log)
+
+[roadmaps](https://roadmap.sh/best-practices)
+
+[freeStartingCourse](https://www.theodinproject.com/paths)
+
 # web 前端三大核心技术
 * html 网页控件
 * css 美化控件代码
