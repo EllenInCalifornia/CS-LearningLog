@@ -7,6 +7,7 @@
 
 [introduction: ELI5 backend technologies and how they relate to each other.](https://www.reddit.com/r/learnprogramming/comments/cddd9k/comment/ettcymq/?utm_source=share&utm_medium=web2x)
 
+
 # backend 
 The back- end of a website consists of a **server, an application, and a database**.
 In order to make the server, application, and database communicate with each other, <br>
@@ -22,6 +23,10 @@ and experience with Linux as a development and deployment system.**
 mobile devices, websites, and other connected systems. **Creating APIs** that the public finds <br>
 useful is a very satisfying part of my job"
 
+# 学习建议
+When learning, your mind will consistently switch between focus mode and diffuse mode. Focus mode occurs when you are consciously focusing on learning,<br> reading, watching videos, or working on a project. Diffuse mode occurs subconsciously, at times when you are not actively learning, such as when you’re<br>doing the dishes, exercising, or sleeping. In this state, your mind goes about the business of connecting what you have been learning to the<br> other things you know. This is where breakthroughs happen.
+
+It’s important to know that your mind goes through these two states when learning because you can utilize this to make your learning more efficient.<br> When stuck on a concept or project, taking a break to refresh and let your subconscious work on making connections more often than not yields a<br> solution<br> to your problem. The trick is to put effort into solving the problem first and then take a break.
 
 # web 前端三大核心技术
 * html 网页控件
