@@ -39,10 +39,10 @@ the original order.
 * each computer on a network is connected to a special tiny computer called a router.<br>
 This router has only one job: like a signaler at a railway station, <br>
 it makes sure that a message sent from a given computer arrives at the right destination computer.<br>
-<img width="766" alt="image" src="https://user-images.githubusercontent.com/118059669/217524550-e2c5d37f-f7d8-464c-b8cc-12181bf58234.png">
+<img width="766" alt="image" src="https://user-images.githubusercontent.com/118059669/217524550-e2c5d37f-f7d8-464c-b8cc-12181bf58234.png"><br>
 
 * By connecting computers to routers, then routers to routers, we are able to scale infinitely.
-![image](https://user-images.githubusercontent.com/118059669/217535201-14d9c83b-ccf3-4950-bbc5-6c7edfbd7401.png)
+![image](https://user-images.githubusercontent.com/118059669/217535201-14d9c83b-ccf3-4950-bbc5-6c7edfbd7401.png)<br>
 
 # modem
 ![image](https://user-images.githubusercontent.com/118059669/217536351-07ba99f3-b5bf-40f9-8e3d-80bb6ba76f17.png)
