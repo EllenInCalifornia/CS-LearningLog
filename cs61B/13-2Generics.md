@@ -1,3 +1,6 @@
+<img width="981" alt="image" src="https://user-images.githubusercontent.com/118059669/217752814-1f233f43-c0c3-48cb-a277-c2f28d68354a.png">
+
+# goal:  Create a class ArrayMap
 # goal:  Create a class ArrayMap
 <img width="958" alt="image" src="https://user-images.githubusercontent.com/118059669/217709780-b6ec4fb3-88e7-4159-b7ca-9967561218c5.png">
 ## code 
@@ -127,11 +130,11 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
 # generic methods
 ## 为什么需要generic methods 
 ## goal： Create a class MapHelper with two methods:
-* get(Map61B, key): Returns the value corresponding to the given key in the map if it exists, otherwise null.
+* **get(Map61B, key)**: Returns the value corresponding to the given key in the map if it exists, otherwise null.
 * * Unlike the ArrayMap’s get method, which crashes if the key doesn’t exist.
-* maxKey(Map61B): Returns the maximum of all keys in the given ArrayMap. Works only if keys can be compared.
-
-* 注意 class MapHelper 与 ArrayMap的不同，使用ArrayMap<K,V> 时会create an instance， 但是MapHelper的作用只是提供一个method，所以MapHelper class里的method是static method
+* **maxKey(Map61B)**: Returns the maximum of all keys in the given ArrayMap. Works only if keys can be compared.
+### get(Map61B, key)
+* 注意 class MapHelper 与 ArrayMap的不同，使用ArrayMap<K,V> 时会create an instance， 但是MapHelper的作用只是提供一个method，所以MapHelper class里的method是static method，也就是class method，invoked by the class; 
 * get(Map61B, key)应该可以用于任何一个Map61B的object，所以应该是generic，但是此时无法通过generic class来实现
 ```java
 public class MapHelper{
@@ -144,5 +147,37 @@ public class MapHelper{
     }
 }
 ```
+### 使用generic method时，直接用就行，不需要明确actual type；
+<img width="999" alt="image" src="https://user-images.githubusercontent.com/118059669/217747571-a19f06fb-4d60-4698-a5b8-6663b3aabce0.png">
 
+### maxKey(Map61B)
+#### problem 
+* how to solve: Works only if keys can be compared.
+<img width="659" alt="image" src="https://user-images.githubusercontent.com/118059669/217749953-4aca7fa6-f167-45c1-bcc7-525257810b8a.png">
+
+```java 
+               //此处确保这个method只能用于comparable keys 
+    public static <K extends Comparable<K>, V> K maxKey(Map61B<K, V> map) {
+        List<K> keys = map.keys();
+        K maxKey = keys.get(0);
+        for (K k : keys) {
+            // 注意此处不能用 >
+            if (k.compareTo(maxKey) > 0) {
+                maxKey = k;
+            }
+
+        }
+        return maxKey;
+    }
+    
+```
+
+### The Issue with Generic Methods
+**Only numerical primitives can be compared with >. **
+
+### Type Upper Bounds to The Rescue
+### 注意这里的extend 等价于 is a subtype of , 与之前class 的extend 不一样（definition）
+<img width="1017" alt="image" src="https://user-images.githubusercontent.com/118059669/217751592-79aa5b3a-54c1-4ddf-8397-3fc8b9e74891.png">
+
+ 
 
