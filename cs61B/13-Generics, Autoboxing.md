@@ -48,3 +48,11 @@ public class X
     }
 }
 ```
+## Integer code  
+```java
+public final class Integer extends Number implements Comparable<Integer> {
+private final int value;
+public Integer(int value){
+this.value = value;
+}
+```
