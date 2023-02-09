@@ -1,6 +1,8 @@
 # How does the Internet work?
 [@source](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 [video:How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc&t=46s)
+
+[more resources about How Does The Web Work?](https://www.theodinproject.com/lessons/foundations-how-does-the-web-work)
 # Summary 
 ### server
 * The internet is a wire
