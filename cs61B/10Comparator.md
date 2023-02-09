@@ -10,7 +10,7 @@
  ```
  
  ## Comparator 
- * Unlike Comparable, Comparator is external to the element type we are comparing. <br>It’s a separate class. We create multiple separate classes (that implement Comparator) to <br>compare by different members.Collections class has a second sort() method <br>and it takes Comparator. The sort() method invokes the compare() to sort objects.
+ * Unlike Comparable, Comparator is external to the element type we are comparing. <br>It’s a separate class（nested classes）. We create multiple separate classes (that implement Comparator) to <br>compare by different members.Collections class has a second sort() method <br>and it takes Comparator. The sort() method invokes the compare() to sort objects.
  
  ```java
  NameCompare nameCompare = new NameCompare();
