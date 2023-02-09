@@ -3,7 +3,8 @@
 ### Feb08 
 * **cs61b**
 * *finished the second half of midterm exam
-* began to learn about** web development,** found very useful resources 
+*** web development **
+* * began to learn about web development, found very useful resources 
 #### content 
 ### Feb06- 07/2023
 * **cs61b**
