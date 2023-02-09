@@ -50,7 +50,7 @@ it makes sure that a message sent from a given computer arrives at the right des
 The telephone infrastructure already connects your house with anyone in the world so it is the perfect<br>
 wire we need. To connect our network to the telephone infrastructure, we need a special piece of equipment called a modem.
 This modem turns the information from our network into information manageable by the telephone infrastructure and vice versa.
-#(ISP)Internet Service Provider
+# (ISP)Internet Service Provider
 ![image](https://user-images.githubusercontent.com/118059669/217535943-6f95b733-9165-4a0b-a0fa-a436cf8ab6b8.png)
 
 The next step is to send the messages from our network to the network we want to reach.<br>
