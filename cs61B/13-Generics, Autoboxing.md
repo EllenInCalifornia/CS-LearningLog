@@ -56,3 +56,28 @@ public Integer(int value){
 this.value = value;
 }
 ```
+# Another automatic Conversion: Primitive Widening
+* it automatically happens when moving from a primitive type with a narrower range to a wider range.
+## examples
+* double is wider than int 
+* byte to short, int, long, float, or double
+* short to int, long, float, or double
+* char to int, long, float, or double
+
+## Narrowing: To move from a wider type to a narrower type, must use casting:
+```java 
+public static void blahInt(int x) {
+   System.out.println(“int: “ + x);
+}
+double x = 20;
+blahInt((int) x);
+```
+# Immutability 
+* once it is created, there is no way to change anything inside it/ an instance cannot change in any observable way after instantiation.
+* Examples:  
+Mutable: ArrayDeque, Planet.  
+Immutable: Integer, String, Date. 
+* the final keyword help to ensuer immutability, without final, private can also help;
+* Warning: Declaring a reference as Final does not make object immutable. the pointer cannot change, but the object it points to can change.  
+Example: public final ArrayDeque<String> d = new ArrayDeque<String>();    
+The d variable can never change, but the referenced deque can!  
