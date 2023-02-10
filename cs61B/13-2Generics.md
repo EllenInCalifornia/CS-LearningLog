@@ -1,10 +1,12 @@
 <img width="981" alt="image" src="https://user-images.githubusercontent.com/118059669/217752814-1f233f43-c0c3-48cb-a277-c2f28d68354a.png">
 
 # goal:  Create a class ArrayMap
-# goal:  Create a class ArrayMap
+
 <img width="958" alt="image" src="https://user-images.githubusercontent.com/118059669/217709780-b6ec4fb3-88e7-4159-b7ca-9967561218c5.png">
-## code 
+
+## code
 ### Map61B 
+
 ```java
 package Map61B;
 import java.util.List;
