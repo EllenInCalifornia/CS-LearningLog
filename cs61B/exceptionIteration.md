@@ -1,3 +1,5 @@
+https://img-blog.csdnimg.cn/img_convert/0b9fb415f8e99cb24042ba7f6cd0e940.png![image](https://user-images.githubusercontent.com/118059669/219540497-1c8055b2-2892-4b02-ba5f-69b60e55b1c5.png)
+
 # implicit Exception 
 thrown by java 
 # explicit Exception
@@ -36,5 +38,6 @@ public V get(K key) {
 <img width="1087" alt="image" src="https://user-images.githubusercontent.com/118059669/219261135-807ba745-b3b6-4a01-9d21-595d4ec4f106.png">
 
 # checked exceptions: “Must be Caught or Declared to be Thrown”
+* checked and unchecked 是对于javac来说的，也就是编译异常和非编译异常
 
 
