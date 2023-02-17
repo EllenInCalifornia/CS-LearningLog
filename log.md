@@ -1,5 +1,10 @@
 ### date
 #### content 
+### Feb 17 
+* **cs61b**
+* exception 
+* 
+# try your best to protect your eyes. Don't abuse it.  
 ### Feb08 
 * **cs61b**
 * *finished the second half of midterm exam
