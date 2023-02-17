@@ -39,5 +39,34 @@ public V get(K key) {
 
 # checked exceptions: “Must be Caught or Declared to be Thrown”
 * checked and unchecked 是对于javac来说的，也就是编译异常和非编译异常
+## 例子 ： 
+* Compiler requires that these be “caught” or “specified”.
+* Goal: Disallow compilation to prevent avoidable program crashes.
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/118059669/219542744-5c17412a-e250-414c-89c3-5100a40270e2.png">
+
+## unchecked exceptions will compile just fine (but will crash at runtime).
+
+# checked vs unchecked exceptions 
+* Any subclass of RuntimeException or Error is unchecked, all other Throwables are checked.
+<img width="838" alt="image" src="https://user-images.githubusercontent.com/118059669/219543243-7a0bc17b-ec5a-4050-b0c7-e6ef69122661.png">
+
+## 处理checked expections 
+* Compiler requires that all checked exceptions be **caught or specified**.
+# 第1种方法 - catch 
+<img width="660" alt="image" src="https://user-images.githubusercontent.com/118059669/219544334-5a3206e2-c3f6-4540-aba5-787acde292ad.png">
+* 注意 IOException 属于 exception 
+# 第2种方法 - specify
+<img width="889" alt="image" src="https://user-images.githubusercontent.com/118059669/219544742-98ef937c-68c3-4251-808b-ee90fe84890d.png">
+
+## 需要注意： If a method uses a ‘dangerous’ method (i.e. might throw a checked exception), it becomes dangerous itself.
+* 下例中 main method 因为使用
+
+
+
+
+
+
+
+
 
 
