@@ -1,4 +1,3 @@
-https://img-blog.csdnimg.cn/img_convert/0b9fb415f8e99cb24042ba7f6cd0e940.png![image](https://user-images.githubusercontent.com/118059669/219540497-1c8055b2-2892-4b02-ba5f-69b60e55b1c5.png)
 
 # implicit Exception 
 thrown by java 
@@ -59,7 +58,11 @@ public V get(K key) {
 <img width="889" alt="image" src="https://user-images.githubusercontent.com/118059669/219544742-98ef937c-68c3-4251-808b-ee90fe84890d.png">
 
 ## 需要注意： If a method uses a ‘dangerous’ method (i.e. might throw a checked exception), it becomes dangerous itself.
-* 下例中 main method 因为使用
+* 下例中 main method 因为使用了gulgate, 它本身也变成了dangerous method 
+<img width="1148" alt="image" src="https://user-images.githubusercontent.com/118059669/219545870-5301beff-a92d-4009-9610-8f94eb3072c0.png">
+## 应对方法
+<img width="968" alt="image" src="https://user-images.githubusercontent.com/118059669/219545977-d301e345-ac90-4ee2-9a3f-3cbc2c23acad.png">
+
 
 
 
