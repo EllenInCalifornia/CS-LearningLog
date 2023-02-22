@@ -9,6 +9,9 @@
 ## how to implement 
 * 1) The List interface extends the Iterable interface, inheriting the abstract iterator() method
 <img width="695" alt="image" src="https://user-images.githubusercontent.com/118059669/220555956-30e709ce-7a26-4d9f-a0da-946bd28d7b48.png">
+ 
+备注： An interface can extend other interfaces. However, whereas a class can extend only one other class, an interface can extend any number of interfaces. The interface declaration includes a comma-separated list of all the interfaces that it extends. In Java, collection is an interface. In Java, collections is a utility class.
+ 
 * 2) The Iterator interface specifies these abstract methods explicitly.
  <img width="745" alt="image" src="https://user-images.githubusercontent.com/118059669/220560032-a2755f77-2ea7-456f-b433-85aefd147550.png">
   
