@@ -118,7 +118,9 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
 # summary for iteration 
 * implement iterable interface to support enhanced for loop 
 * iterator() method must return an object that implements the Iterator interface.
+# 遗留问题： 我不明白这个keys 本身不就是一个list了么？
 ## the way to do it without creating an inner class 
+
 ```java 
   // we are trying to iterate over keys 
   public Iterator<K> iterator() {
