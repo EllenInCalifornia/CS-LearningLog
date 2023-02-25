@@ -1,5 +1,22 @@
 ### date
 #### content 
+
+### Feb 25
+#### cs61b-hw1- test
+* message only shows when the test fails 
+* the syntax depends on the Junit version 
+
+* for JUnit <= 4.12 was:
+```java	
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testIndexOutOfBoundsException() {
+
+        ArrayList emptyList = new ArrayList();
+        Object o = emptyList.get(0);
+
+    }
+```
+
 ### Feb 17 
 * **cs61b**
 * exception 
