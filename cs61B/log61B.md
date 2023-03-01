@@ -1,4 +1,4 @@
-#Mar 1- lecture 15 Packages,jar
+# Mar 1- lecture 15 Packages,jar
 * packages are just like folders
 * jar files are just zip files
 * creating a jar file:  intelliJ: file - project structure - artifacts- jar - from module with dependencies- build artifacts 
@@ -9,8 +9,10 @@
 * only code from a given class can access private members. subclass, same package 都不可以; subclass inherit all the members of the parent class, but doesn't not have access to private members; to give subclass access to members, use protected.
 
 * no modifier = package private 
+<img width="634" alt="image" src="https://user-images.githubusercontent.com/118059669/222066191-75d5b066-4e14-43cd-97a4-49783b356709.png">
 
-#Feb 28 
+
+# Feb 28 
 it took me two days to figure out lab5, with little help
 
 ## lab 5 
