@@ -1,3 +1,11 @@
+# push local repository to github
+* cd to the current directory
+* git init
+* git add . (所有的文件）
+* git commit -m ""
+* git branch -M main
+* git remote add origin (github repo address)
+* git push -u origin main
 # Feb24 mac 分屏操作
 * 今天学会了mac的分屏操作，把墨水屏的体验感提升了好几个层次！ 
 ## 程序坞的移动
